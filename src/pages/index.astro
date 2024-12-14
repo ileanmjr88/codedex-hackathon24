@@ -1,16 +1,30 @@
 ---
+import MainLayout from "../layout/MainLayout.astro";
+import Button from "../components/Button";
 
+interface NavItem {
+    name: string;
+    href: string;
+}
+const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Blog", href: "/blog" },
+    { name: "Guestbook", href: "/Guestbook" },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Codedex Hackathon 2024">
+    <h1 class="text-3xl font-bold justify-center items-center text-center">Welcome to My Website</h1>
+    <div class="flex">
+        <div class="w-1/4 py-4">
+            {navItems.map((item: NavItem) => (
+                <a href={item.href} class="block mb-2">
+                    <Button text={item.name} onClick={() => window.location.href = item.href} />
+                </a>
+            ))}
+        </div>
+        <div class="w-3/4 p-4">
+            <h1 class="text-3xl font-bold">Welcome to Codedex Hackathon 2024</h1>
+        </div>
+    </div>
+</MainLayout>

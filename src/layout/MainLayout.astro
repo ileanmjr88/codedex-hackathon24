@@ -1,0 +1,35 @@
+---
+import "../styles/global.css";
+---
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Codedex Hackathon 2024</title>
+    </head>
+    <body id="main-body" class="bg-custom-pattern bg-repeat text-white font-times min-h-screen">
+        <main class="px-8">
+            <slot />
+        </main>
+
+
+    </body>
+</html>
+
+<script type="module" client:load>
+    // I would love to scale the elements of the page to scale according to 800x600 resolution 
+    // the typical screen resolution of the 90s and early 2000s
+    const container = document.getElementById('main-body');
+
+    function scalePage() {
+        const scaleX = window.innerWidth / 800;
+        const scaleY = window.innerHeight / 600;
+        const scale = Math.min(scaleX, scaleY);
+        container.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener('resize', scalePage);
+    scalePage();
+</script>
