@@ -4,8 +4,8 @@ import type { CollectionEntry } from "astro:content";
 import Layout from "../../layout/Layout.astro";
 
 export const getStaticPaths = async () => {
-    const posts = await getCollection("blogs");
-    const paths = posts.map((post: CollectionEntry<"blogs">) => ({
+    const posts = await getCollection("posts");
+    const paths = posts.map((post: CollectionEntry<"posts">) => ({
         params: { slug: post.slug },
         props: {post},
     }));
@@ -13,7 +13,7 @@ export const getStaticPaths = async () => {
 };
 
 type Props = {
-    post: CollectionEntry<"blogs">;
+    post: CollectionEntry<"posts">;
 };
 const currentPath = Astro.url.pathname;
 const {post} = Astro.props;
@@ -23,9 +23,9 @@ const {Content} = await post.render();
 <Layout title={post.data.title} currentPath={currentPath}>
         <div class="py-8">
             <h1>{post.data.title}</h1>
-            <h2 class="text-lg font-normal text-black">Author: {post.data.author}</h2>
-            <h2 class="text-lg font-normal text-black">Date: {post.data.date}</h2>
-            <h2 class="text-lg font-normal text-black">Intended audience: {post.data.audience}</h3>
+            <h2 class="text-lg font-normal">Author: {post.data.author}</h2>
+            <h2 class="text-lg font-normal">Date: {post.data.date}</h2>
+            <h2 class="text-lg font-normal">Intended audience: {post.data.audience}</h3>
         </div>
         <section class="prose prose-2xl overflow-visible aspect-thumbnail object-cover py-8">
             <Content />

@@ -2,7 +2,7 @@
 author: Ilean Monterrubio Jr
 title: Finding Community in Houston’s Tech Scene
 description: "Looking to connect with Houston's tech community? After my recent layoff, I explored meetups and networking events across the city, discovering a vibrant tech scene beyond Oil & Gas. From coding groups to robotics workshops, here’s my journey of finding opportunity, community, and innovation in Houston. #HoustonTech #Networking"
-category: ["houston-meetups", "professional-networking"]
+category: ["houston-meetups professional-networking"]
 date: 10/31/2024
 audience: "Everyone"
 ---

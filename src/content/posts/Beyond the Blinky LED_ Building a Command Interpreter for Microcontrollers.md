@@ -1,8 +1,8 @@
 ---
 author: "Ilean Monterrubio Jr"
 title: "Beyond the Blinky LED: Building a Command Interpreter for Microcontrollers"
-description: "Move beyond the Blinky LED! 🌟 This guide introduces the command interpreter project—a great next step for microcontroller beginners. Learn serial communication, baud rate settings, and essential commands like echo and analog-read. Perfect for hobbyists and students diving deeper into embedded systems." 
-category: ["microcontroller-project", "command-interpreter", "cmd-interpreter", "arduino raspberry-pi-pico"]
+description: "Move beyond the Blinky LED! 🌟 This guide introduces the command interpreter project—a great next step for microcontroller beginners. Learn serial communication, baud rate settings, and essential commands like echo and analog-read. Perfect for hobbyists and students diving deeper into embedded systems. #Microcontrollers #Coding #DIY" 
+category: ["microcontroller-project command-interpreter cmd-interpreter arduino raspberry-pi-pico"]
 date: 10/31/2024
 audience: "Hobbyist / Beginner / University Students "
 ---

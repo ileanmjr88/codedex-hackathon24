@@ -1,6 +1,12 @@
 ---
 import MainLayout from "../layout/MainLayout.astro";
 import Button from "../components/Button";
+import ContactLink from "../components/ContactLink";
+
+import email from "../../public/e-mail.gif";
+import github from "../../public/ftpsync.gif";
+import linkedin from "../../public/software-professional.gif";
+import resume from "../../public/resume.gif";
 
 interface NavItem {
     name: string;
@@ -38,8 +44,12 @@ const navItems = [
                 </ul>
             </div>
             <div class="py-4 text-lg">
-                <h3 class="text-xl font-bold text-green">Contact Me</h2>
-
+                <h3 class="text-xl font-bold text-green">Contact Me</h3>
+                <ContactLink text="email" url="mailto:ileanmjr88@gmail.com" image={email} />
+                <ContactLink text="github" url="https://github.com" image={github} />
+                <ContactLink text="linkedin" url="https://linkedin.com/in/ilean-monterrubio-jr" image={linkedin} />
+                <ContactLink text="resume" url="https://rxresu.me/ileanmjr88/ilean-monterrubio-jr-resume-2024" image={resume} />
+            </div>
         </div>
     
     </div>
