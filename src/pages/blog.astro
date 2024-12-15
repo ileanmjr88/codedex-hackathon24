@@ -1,11 +1,26 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layout/Layout.astro";
-import MainArea from "../components/MainArea.astro";
+import BlogItem from "../components/BlogItem";
+
+const posts = await getCollection("blogs");
+
+console.log(posts);
+
 ---
 
-<Layout>
+<Layout title="My Blogs">
     <div class="flex justify-center">
-            <h1>Blog</h1>
-            <p>Coming soon...</p>
+        <div class="w-3/4">
+            <div class="py-4">
+                {posts.map((post) => (
+                    <BlogItem 
+                        title={post.data.title}
+                        description={post.data.description}
+                        url={`/blog/${post.slug}`} 
+                    />
+                ))}
+            </div>
+        </div>
     </div>
 </Layout>

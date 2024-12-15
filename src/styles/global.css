@@ -5,13 +5,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: auto;
+    height: 100%;
   }
 
   #main-body {
     width: 800px;
     height: 600px;
-    transform: scale(1.25);
-    transform-origin: top left;
-    border: 1px solid white;
+    transform: scale(1.5);
+    transform-origin: left top;
+    overflow: auto;
   }

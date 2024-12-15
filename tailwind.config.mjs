@@ -17,7 +17,7 @@ export default {
             current: 'currentColor',
             white: '#ffffff',
             black: '#000000',
-            blue: '#3b00fd',
+            blue: '#1F51FF',
             green: '#00f92a',
             aqua: '#04caf4',
             fushia: '#f906d6',
