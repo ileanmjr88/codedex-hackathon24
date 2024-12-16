@@ -1,5 +1,7 @@
 # Codedex Mini-Hackathon 2024
 
-As a person that saw the internet grow from the early 90's I did my absolute best to recreate parts of my personal website in 90's style.
+As someone who witnessed the growth of the internet from the early 90s, I have done my best to recreate parts of my personal website in a 90s style.
 
-From having the resolution be emulated to be 800x600 and having it slightly off centered to the left if you were the lucky one to have a larger screen especially as we entered the early 2000's. I also recalled having seen lots of places have visitors have the ability to sign a guestbook. It was almost like the internet stardard for blogs to have a tiled background or a gray background.
+The resolution is emulated to be 800x600, slightly off-centered to the left, reminiscent of the experience for those with larger screens as we entered the early 2000s. I also included a guestbook feature, which was a common element on many websites back then. Additionally, many blogs had either a tiled background or a gray background.
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=flat-square)](https://dancing-beijinho-5fad4d.netlify.app)
